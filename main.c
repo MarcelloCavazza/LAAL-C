@@ -59,7 +59,7 @@ dotProduct(){
         if(denominator == 0){
             printf("Does not exists an angle for this two vectors.");
         }
-        //falta se numerador é igual a 0 e caso nao for
+        //falta se numerador é igual a 0 e caso nao for //https://www.programiz.com/c-programming/library-function/math.h/acos#:~:text=C%20atan()-,C%20acos(),function%20is%20included%20in%20%3Cmath.
     }
 }
 
