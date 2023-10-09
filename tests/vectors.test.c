@@ -1,22 +1,24 @@
 #include <stdio.h>
 #include <math.h>
-#include "mainheader.h"
+#include "../mainheader.h"
 
-void populateVector(int length, double vector[], int isToTest, double allVectorValuesShouldBe)
-{
-    if(isToTest == 1){
-        for (int i = 0; i < length; i++)
-        {
-            vector[i] = allVectorValuesShouldBe;
-        }
-    }else{
-        printf("\nPopulate the vector:\n");
-        for (int i = 0; i < length; i++)
-        {
-            askAndSetValueDouble("\nInsira um valor para o array:", &vector[i]);
-        }
+// void populateVector(int length, double vector[])
+// {
+//     printf("\nPopulate the vector:\n");
+//     for (int i = 0; i < length; i++)
+//     {
+//         askAndSetValueDouble("\nInsira um valor para o array:", &vector[i]);
+//     }
+// }
+
+void GiveAEmptyVectorAndItsLengthWhenIwantToPopulateItThenShouldPopulateWithSucess(){
+    int length = 3;
+    double vector[3], allVectorValuesShouldBe = 0.0;
+    populateVector(1, length, vector, allVectorValuesShouldBe);
+    for (int i = 0; i < length; i++)
+    {
+        assert(vector[i] == 0.0);
     }
-    
 }
 
 void showVectorUserFriendly(int length, double vector[], char vectorLetter)

@@ -6,8 +6,8 @@ void dotProduct()
     int dimensions = 1;
     askAndSetValueInt("\nInsert the number of dimensions for the vectors:", &dimensions);
     double uVector[dimensions], vVector[dimensions];
-    populateVector(dimensions, uVector);
-    populateVector(dimensions, vVector);
+    populateVector(0, dimensions, uVector, 0);
+    populateVector(0, dimensions, vVector, 0);
 
     showVectorUserFriendly(dimensions, uVector, 'U');
     showVectorUserFriendly(dimensions, vVector, 'V');
