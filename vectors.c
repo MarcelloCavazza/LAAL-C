@@ -2,7 +2,7 @@
 #include <math.h>
 #include "mainheader.h"
 
-void populateVector(int length, double vector[], int isToTest, double allVectorValuesShouldBe)
+void populateVector( int isToTest, int length, double vector[], double allVectorValuesShouldBe)
 {
     if(isToTest == 1){
         for (int i = 0; i < length; i++)

@@ -12,4 +12,7 @@ void showVectorUserFriendly(int length, double vector[], char vectorLetter);
 double getVectorSize(double vector[], int dimensions);
 double multiplyVectors(double uVector[], double vVector[], int length);
 
+// test methods
+void GiveAEmptyVectorAndItsLengthWhenIwantToPopulateItThenShouldPopulateWithSucess();
+
 #endif

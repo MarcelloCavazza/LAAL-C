@@ -10,10 +10,11 @@ int main()
     do
     {
         askAndSetValueInt("Do you want to test(0) or execute(1) the application?", &runProgram);
-        printf("%d", runProgram);
     } while (runProgram != 0 && runProgram != 1);
     if (runProgram == 0)
     {
+        printf("Running vectors tests...\n");
+        GiveAEmptyVectorAndItsLengthWhenIwantToPopulateItThenShouldPopulateWithSucess();
     }
     else
     {
