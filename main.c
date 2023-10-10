@@ -14,7 +14,7 @@ int main()
     if (runProgram == 0)
     {
         printf("Running vectors tests...\n");
-        GiveAEmptyVectorAndItsLengthWhenIwantToPopulateItThenShouldPopulateWithSucess();
+        GiveAEmptyVectorAndItsLengthWhenIwantToPopulateItThenShouldPopulateWithTheGivenvalues();
     }
     else
     {

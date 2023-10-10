@@ -13,6 +13,6 @@ double getVectorSize(double vector[], int dimensions);
 double multiplyVectors(double uVector[], double vVector[], int length);
 
 // test methods
-void GiveAEmptyVectorAndItsLengthWhenIwantToPopulateItThenShouldPopulateWithSucess();
+void GiveAEmptyVectorAndItsLengthWhenIwantToPopulateItThenShouldPopulateWithTheGivenvalues();
 
 #endif
