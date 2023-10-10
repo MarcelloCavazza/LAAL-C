@@ -14,5 +14,6 @@ double multiplyVectors(double uVector[], double vVector[], int length);
 
 // test methods
 void GiveAEmptyVectorAndItsLengthWhenIwantToPopulateItThenShouldPopulateWithTheGivenvalues();
+char* showResult(char *testName, int result, double expectedValue, double recievedValue);
 
 #endif

@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include <math.h>
 #include "../mainheader.h"
-#include <assert.h>
 
 void GiveAEmptyVectorAndItsLengthWhenIwantToPopulateItThenShouldPopulateWithTheGivenvalues()
 {
-    printf("\n-----------------------\n");
     int length = 3;
     double allVectorValues[] = {0.0, 1.0, 2.0};
     double vectors[3][3];
@@ -21,15 +19,14 @@ void GiveAEmptyVectorAndItsLengthWhenIwantToPopulateItThenShouldPopulateWithTheG
                 break;
             }
             if(vectors[i][j] != allVectorValues[i]){
-                printf("Test Name: GiveAEmptyVectorAndItsLengthWhenIwantToPopulateItThenShouldPopulateWithSucess\nTest result: Failed - Vector values is diff from expected value\nVector: %lf != Value That is Expect To Be:%lf", vectors[i][j], allVectorValues[j]);
+                showResult("GiveAEmptyVectorAndItsLengthWhenIwantToPopulateItThenShouldPopulateWithSucess", 0, allVectorValues[i], vectors[i][j]);
                 failed = 1;
             }
         }
     }
     if(failed == 0){
-        printf("Test Name: GiveAEmptyVectorAndItsLengthWhenIwantToPopulateItThenShouldPopulateWithSucess\nTest Result: %s", result);
+        showResult("GiveAEmptyVectorAndItsLengthWhenIwantToPopulateItThenShouldPopulateWithSucess", 1, 0 ,0);
     }
-    printf("\n-----------------------\n");
 }
 
 // void test_GiveAEmptyVectorAndItsLengthWhenIwantToPopulateItThenShouldPopulateWithSucess()
