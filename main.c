@@ -15,6 +15,7 @@ int main()
     {
         printf("Running vectors tests...\n");
         GiveAEmptyVectorAndItsLengthWhenIwantToPopulateItThenShouldPopulateWithTheGivenvalues();
+        GivenTwoVectorsAndItsLengthWhenIWantTheDotProductThenSouldBeACorrectScalar();
     }
     else
     {

@@ -56,3 +56,9 @@ multiplyVectors(double uVector[], double vVector[], int length)
     }
     return total;
 }
+
+
+double getAngleBetweenVectors(double numerator, double denominator)
+{
+    return acos(numerator / denominator);
+}

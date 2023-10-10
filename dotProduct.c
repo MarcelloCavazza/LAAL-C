@@ -14,7 +14,7 @@ void dotProduct()
 
     const double constant = multiplyVectors(uVector, vVector, dimensions);
     printf("The Dot Product of those two vectors is %.2lf\n", constant);
-    int getTheAngle = -1, askForAngle = 0;
+    int getTheAngle = -1, askForAngle = -1;
     do
     {
         askAndSetValueInt("Do you want to know the angle between those two vectors?\n1-Yes\n0-No\n", &getTheAngle);
@@ -22,7 +22,7 @@ void dotProduct()
         {
             askForAngle = 1;
         }
-    } while (askForAngle == 0);
+    } while (askForAngle == -1);
     if (askForAngle == 1)
     {
         double denominator = getDenominator(uVector, vVector, dimensions);
@@ -32,8 +32,9 @@ void dotProduct()
         }
         else
         {
+            double resultAngle = getAngleBetweenVectors(constant, denominator);
+            printf("The angle between those two vectors is %.2lf\n degress", resultAngle);
         }
-        // falta se numerador é igual a 0 e caso nao for //https://www.programiz.com/c-programming/library-function/math.h/acos#:~:text=C%20atan()-,C%20acos(),function%20is%20included%20in%20%3Cmath.
     }
 }
 double
