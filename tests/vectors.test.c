@@ -72,3 +72,32 @@ void GivenTwoVectorsAndItsLengthWhenIWantTheDotProductThenSouldBeACorrectScalar(
         showResult("GivenTwoVectorsAndItsLengthWhenIWantTheDotProductThenSouldBeACorrectScalar", 1, 0, 0);
     }
 }
+
+void GivenADenominatorAndANumeratorWhenIWantTheAngleBetweenVectorsThenSouldBeACorrectAngle()
+{
+    double numerators[] = {0, 265.0, 53.0};
+    double denominators[] = {14.0, 265.0, 172.0};
+    double expectedAngles[] = {90.0, 0.0, 72.0};
+    int failed = 0;
+    for (int i = 0; i < 3; i++)
+    {
+        if (failed == 1)
+        {
+            break;
+        }
+        double result = round(getAngleBetweenVectors(numerators[i], denominators[i]));
+        if (result != expectedAngles[i])
+        {
+            failed = 1;
+            showResult("GivenADenominatorAndANumeratorWhenIWantTheAngleBetweenVectorsThenSouldBeACorrectAngle", 0, expectedAngles[i], result);
+        }
+    }
+    if (failed == 0)
+    {
+        showResult("GivenADenominatorAndANumeratorWhenIWantTheAngleBetweenVectorsThenSouldBeACorrectAngle", 1, 0, 0);
+    }
+}
+
+void GivenVectorAndItsDimensionWhenCalculateMagnitudeShouldBeCorrect(){
+    
+}

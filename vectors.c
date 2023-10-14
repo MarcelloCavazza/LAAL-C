@@ -60,5 +60,5 @@ multiplyVectors(double uVector[], double vVector[], int length)
 
 double getAngleBetweenVectors(double numerator, double denominator)
 {
-    return acos(numerator / denominator);
+    return acos(numerator / denominator)*180/PI;
 }

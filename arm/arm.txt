@@ -1,0 +1,19 @@
+Registers:
+are ares in memory that are very close to the cpu(fast), but its limited to eight hexadecimal values(hexadecimal = 4 bit)
+8 decimal slots, each 4 bits = 32 bit computer
+
+word = max size of a register
+
+r0-r6 = general porpouse
+
+r7 = ask the cpu to do something
+
+sp= stack pointer, always tell the next available piece of memeory on the stack. the next address of a value is always 4 higher
+
+stack memory = stored in ram
+
+link register = stores the location of the location that a function should return
+
+pc = program counter, keep track of the next instrucion to execute
+
+cpsr = has flags that tell special information about operations(eg: a sum returned pos or neg)

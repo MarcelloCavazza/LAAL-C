@@ -1,5 +1,6 @@
 #ifndef MAINHEADER_H
 #define MAINHEADER_H
+#define PI 3.1415926535
 
 void askAndSetValueInt(char *label, int *variable);
 void askAndSetValueDouble(char *label, double *variable);
@@ -15,8 +16,9 @@ double multiplyVectors(double uVector[], double vVector[], int length);
 double getAngleBetweenVectors(double numerator, double denominator);
 
 // test methods
+char *showResult(char *testName, int result, double expectedValue, double recievedValue);
 void GiveAEmptyVectorAndItsLengthWhenIwantToPopulateItThenShouldPopulateWithTheGivenvalues();
 void GivenTwoVectorsAndItsLengthWhenIWantTheDotProductThenSouldBeACorrectScalar();
-char *showResult(char *testName, int result, double expectedValue, double recievedValue);
-
+void GivenADenominatorAndANumeratorWhenIWantTheAngleBetweenVectorsThenSouldBeACorrectAngle();
+void GivenVectorAndItsDimensionWhenCalculateMagnitudeShouldBeCorrect();
 #endif

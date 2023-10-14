@@ -16,6 +16,7 @@ int main()
         printf("Running vectors tests...\n");
         GiveAEmptyVectorAndItsLengthWhenIwantToPopulateItThenShouldPopulateWithTheGivenvalues();
         GivenTwoVectorsAndItsLengthWhenIWantTheDotProductThenSouldBeACorrectScalar();
+        GivenADenominatorAndANumeratorWhenIWantTheAngleBetweenVectorsThenSouldBeACorrectAngle();
     }
     else
     {
