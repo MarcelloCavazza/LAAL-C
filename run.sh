@@ -1,0 +1,1 @@
+clear && gcc main.c input.c dotProduct.c vectors.c ./tests/vectors.test.c ./tests/testsMethods.c -o main -lm && ./main
